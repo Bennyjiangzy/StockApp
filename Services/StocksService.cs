@@ -53,7 +53,6 @@ namespace Services
         {
             return _buyOrders.Select(temp => temp.ToBuyOrderResponse()).ToList();
         }
-
         public List<SellOrderResponse> GetAllSellOrders()
         {
             return _sellOrders.Select(temp => temp.ToSellOrderResponse()).ToList();

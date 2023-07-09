@@ -10,15 +10,14 @@ namespace Tests
 {
     public class StockServiceTest
     {
-        private readonly IStocksService _stocksService;
+        private readonly ServiceContracts.IStocksService _stocksService;
         private readonly ITestOutputHelper _testOutputHelper;
 
         public StockServiceTest(ITestOutputHelper testOutputHelper)
         {
-            _stocksService = new StocksService();
+            _stocksService = new Services.StocksService();
             _testOutputHelper = testOutputHelper;
         }
-
 
         #region CreateBuyOrder
 
